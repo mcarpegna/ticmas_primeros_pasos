@@ -51,6 +51,6 @@ section {
 
   @media (max-width: 768px) {
     * {
-      background-color: red;
+      background-color: lightcoral;
     }
   }
