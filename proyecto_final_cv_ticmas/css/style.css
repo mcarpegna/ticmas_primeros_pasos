@@ -1,0 +1,186 @@
+/* Fuentes y colores a utilizar */
+:root {
+    --fuentePrincipal:'Roboto', sans-serif;
+
+    --gris_oscuro: #b0bec5;
+    --gris_claro: #cfd8dc;
+    --negro: #000000;
+    --gris: #E1E1E1;
+}
+
+/* Ajustes generales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fuentePrincipal); 
+    font-size: 1.7rem;
+    line-height: 1.7;  
+}
+
+/* Globales */
+h1, h2 {
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2.4rem;
+    margin: 1.6rem;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 5px;
+    margin: .3rem;
+}
+li {
+    border-bottom: 1px solid var(--gris_oscuro);
+    margin: .3rem;
+}
+li:last-of-type {
+    border-bottom: none;
+}
+span {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: var(--negro);
+    display: flex;
+    align-items: flex-end;
+}
+a:hover {
+    color: var(--gris_oscuro);
+}
+.tarjeta {
+    margin: .3rem;
+    padding: .5rem;
+    border-radius: 1rem;    
+    background: linear-gradient(to right, #ffffff 0%, #f6f6f6 47%, var(--gris_claro) 100%);
+    box-shadow: 5px 5px 5px 0px rgba(120,144,156,1);
+}
+.ico {
+    height: 36px;
+    margin: .5rem;
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100rem;   
+    min-width: min-content; 
+    min-height: 120rem;
+    margin: 0 15%;
+    padding: .5rem;background: linear-gradient(to right, #c2c2c2 0%, #7b919d 0%, #b8b8b8 47%, #b8b8b8 100%);
+    box-shadow: 5px 5px 5px 0px rgba(207,216,220,1);
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+}
+.nombre {
+    font-weight: bold;
+    font-size: 4.8rem;
+    margin: 1rem;
+}
+.profesion {
+    font-size: 2.8rem;
+    margin: 1rem;
+}
+.foto {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.foto img {
+    padding: 1rem;
+    max-width: 17rem;
+    max-height: 17rem;
+    border-radius: 15rem;
+}
+/* Principal */
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+/* Principal/aside */
+.cinta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.perfil p {
+    margin: 1.7rem;
+}
+.altura {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/* Principal/cuerpo */
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+}
+.listas {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    margin: .3rem;
+}
+.item ul li {
+    line-height: 1.7;
+}
+.iconos {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+}
+
+/* Carta de presentación */
+.carta {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Query Cel */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+    }
+    .principal {
+        flex-direction: column;
+    }
+    h1, h2{
+        text-align: center;
+    }
+
+}
