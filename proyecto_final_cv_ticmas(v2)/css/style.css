@@ -206,16 +206,16 @@ nav {
 }
 
 /* scrollbar (se ve solo al hacer hover, personalizada) */
-.principal::-webkit-scrollbar {
+.contenedor::-webkit-scrollbar {
     display: none;
     width: 4px;
 }
 
-.principal:hover::-webkit-scrollbar {
+.contenedor:hover::-webkit-scrollbar {
     display: initial;
 }
 
-.principal::-webkit-scrollbar-thumb {
+.contenedor::-webkit-scrollbar-thumb {
     background-color: var(--gris_claro);
 }
 

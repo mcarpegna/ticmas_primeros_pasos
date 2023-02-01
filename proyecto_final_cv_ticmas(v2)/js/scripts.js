@@ -38,10 +38,3 @@ for (i; i <= 10; i++) {
         this.style.background = 'linear-gradient(to right, #ffffff 0%, #f6f6f6 47%, var(--gris_claro) 100%)';
     })
 }
-
-
-
-
-
-
-
