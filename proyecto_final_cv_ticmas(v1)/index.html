@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <meta name="description" content="Curriculum Vitae">
+    <link rel="icon" type="image/jpeg" href="img/favicon.ico">
+
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,10 +16,9 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/jpeg" href="img/favicon.ico">
 
     <script src="js/scripts.js" defer></script>
 </head>
@@ -26,15 +27,15 @@
 
     <div class="contenedor">
 
-        <header class="encabezado tarjeta">            
+        <header class="encabezado tarjeta">
             <div class="texto">
                 <h1 id="nombre" class="nombre">Nombre Apellido</h1>
                 <nav>
-                    <a href="#carta">Carta de presentación</a>
-                    <a href="#contacto">Contacto</a>
+                    <h4><a href="#carta">Presentación</a></h4>
+                    <h4><a href="#contacto">Contacto</a></h4>
                 </nav>
-
             </div>
+
             <div class="foto">
                 <img id="miniatura" src="img/foto.jpg" alt="foto usuario">
             </div>
@@ -49,6 +50,7 @@
                             Iure nulla odit ab magni doloremque incidunt unde minima fuga neque libero.
                             Voluptate autem repudiandae eligendi non delectus dolorum ipsam et ea?</p>
                     </div>
+
                     <div class="datos_personales altura tarjeta">
                         <h2>Datos personales</h2>
                         <ul>
@@ -66,6 +68,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="idiomas altura tarjeta">
                         <h2>Idiomas</h2>
                         <ul>
@@ -74,6 +77,7 @@
                             <li><span>Xxxxxx:</span> Xxxxxxxx.</li>
                         </ul>
                     </div>
+
                     <div class="redes_sociales altura tarjeta">
                         <h2>Redes Sociales</h2>
                         <ul>
@@ -92,6 +96,7 @@
                         </ul>
                     </div>
                 </aside>
+
                 <section class="cuerpo">
                     <div class="experiencia tarjeta">
                         <h2>Experiencia profesional</h2>
@@ -139,6 +144,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="educacion tarjeta">
                         <h2>Educación</h2>
                         <ul>
@@ -166,6 +172,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="software tarjeta">
                         <h2>Software</h2>
                         <ul>
@@ -186,11 +193,10 @@
             </div>
 
             <div class="seccion_dos">
-
                 <article id="carta" class="carta tarjeta">
                     <div class="titulo">
                         <h2>Carta de presentación.</h2>
-                        <a href="#inicio">Volver al inicio</a>
+                        <h4><a href="#inicio">Volver</a></h4>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna diam, suscipit et aliquet
                         luctus, tincidunt at risus. Donec suscipit tellus lorem. Proin hendrerit arcu id ligula
@@ -234,35 +240,36 @@
                 <div id="contacto" class="contacto tarjeta seccion_dos">
                     <div class="titulo">
                         <h2>Contacto</h2>
-                        <a href="#inicio">Volver al inicio</a>
+                        <h4><a href="#inicio">Volver</a></h4>
                     </div>
 
                     <form id="formul" class="formulario" method="get" action="#">
 
                         <div class="izquierda">
                             <label for="nombre">
-                                <p>Nombre:</p>
+                                <h4>Nombre:</h4>
                                 <input type="text" placeholder="Nombre del contacto" required>
                             </label>
                             <label for="empresa">
-                                <p>Empresa:</p>
+                                <h4>Empresa:</h4>
                                 <input type="text" placeholder="Nombre de la empresa" required>
                             </label>
                             <label for="telefono">
-                                <p>Teléfono:</p>
+                                <h4>Teléfono:</h4>
                                 <input type="tel" placeholder="10 dígitos sin espacios" pattern='\d{10}' required>
                             </label>
                             <label for="email">
-                                <p>Email:</p>
+                                <h4>Email:</h4>
                                 <input type="email" placeholder="nombre@dominio.com" required>
                             </label>
-
                         </div>
+
                         <div class="derecha">
                             <label class="informacion" for="mensaje">
-                                <p>Información adicional:</p>
+                                <h4>Información adicional:</h4>
                                 <textarea cols="30" rows="10" maxlength="550" placeholder="Escriba aquí..."></textarea>
                             </label>
+
                             <button id="boton_envio" class="boton_envio" type="submit">Enviar</button>
                         </div>
                     </form>
@@ -274,7 +281,6 @@
             <button class="boton_recarga" id="nuevo_perfil" type="reset">Nuevo perfil</button>
         </footer>
     </div>
-
 </body>
 
 </html>

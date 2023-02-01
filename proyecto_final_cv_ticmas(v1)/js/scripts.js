@@ -10,7 +10,7 @@ const cargarPerfil = async () => {
     document.getElementById('miniatura').src = datos.results[0].picture.large;
     // Cambia el título de la página
     document.title = "CV - " + datos.results[0].name.first + " " + datos.results[0].name.last;
-}    
+}
 cargarPerfil();
 
 // Recarga la página al dar click al boton Nuevo Perfil
@@ -21,28 +21,20 @@ nuevo_perfil.addEventListener('click', function () {
 
 // Borra el contenido del formulario al enviarlo
 let formulario = document.getElementById('formul');
-formulario.addEventListener('submit', function() {
+formulario.addEventListener('submit', function () {
     formulario.reset();
 });
 
-
-
 // Modificar tarjetas al pasar el mouse por arriba (se puede hacer mas facilmente con CSS
 // pero lo he hecho como desafío y práctica)
-
-let tarjeta_mouse_nodelist = document.querySelectorAll('.tarjeta');
-console.log(tarjeta_mouse_nodelist);
-
-let tarjeta_mouse_array = Array.from(tarjeta_mouse_nodelist);
-console.log(tarjeta_mouse_array);
+let tarjeta_nodelist = document.querySelectorAll('.tarjeta');
 
 let i = 1;
-for (i; i <= 10 ; i++) {
-    console.log(tarjeta_mouse_array[i]);
-    tarjeta_mouse_array[i].addEventListener('mouseenter', function (event) {
-        this.style.background = 'var(--gris_claro';        
+for (i; i <= 10; i++) {
+    tarjeta_nodelist[i].addEventListener('mouseenter', function (event) {
+        this.style.background = 'var(--gris_claro';
     })
-    tarjeta_mouse_array[i].addEventListener('mouseleave', function (event) {
+    tarjeta_nodelist[i].addEventListener('mouseleave', function (event) {
         this.style.background = 'linear-gradient(to right, #ffffff 0%, #f6f6f6 47%, var(--gris_claro) 100%)';
     })
 }
